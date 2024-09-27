@@ -40,7 +40,77 @@
   opacity: var(--opacity-value);
 }
 
-/* Header / Hero Styles */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 80px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-smile {
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .pros .col-md-3 {
+    flex: 1 0 50%;
+  }
+
+  .carousel-item {
+    padding: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 60px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-smile {
+    padding: 8px 16px;
+  }
+
+  .pros .col-md-3 {
+    flex: 1 0 100%;
+  }
+
+  .carousel-item .col-lg-3 {
+    flex: 1 0 100%;
+  }
+}
+
+.btn-smile:hover, 
+.btn-smile:active {
+  opacity: 0.9;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .header {
   background-image: url("images/pic_1.jpg");
